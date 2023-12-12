@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Michroma', monospace;
+    font-size: 15px;
+    background-color: rgb(25, 25, 25);
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+.card {
+    /* Position */
+    /* Size, Margin & Padding */
+    height: auto;
+    min-height: 400px;
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 10px 1px;
+    /* Text */
+    
+    /* Decors */
+    background-color: rgba(25, 75, 150, 1);
+    backdrop-filter: blur(15px);
+    /* Others */
+    display: grid;
+    align-content: start;
+    --intMaxWidth: 90%;
+}
+.cardTitle {
+    height: auto;
+    min-height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.cardImg {
+    justify-self: center;
+    height: 175px;
+    width: calc(100% - 25px);
+    margin: 5px auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.mainSpec {
+    width: var(--intMaxWidth);
+    margin: 5px auto;
+}
+.cardSpecs {
+    width: var(--intMaxWidth);
+    margin: 15px auto;
+}
+.spec{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.otherSpec {
+    height: auto;
+    width: var(--intMaxWidth);
+    margin: 7px auto;
+    font-size: 12px;
+    text-align: justify;
+}
